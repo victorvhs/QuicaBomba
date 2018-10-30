@@ -11,7 +11,12 @@ config_version=3
 [application]
 
 config/name="quicaBola"
+run/main_scene="res://cenas/main.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=600
 
 [rendering]
 
