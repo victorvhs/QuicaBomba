@@ -8,7 +8,9 @@
 custom_solver_bias = 0.0
 radius = 22.5238
 
-[node name="bomb" type="RigidBody2D" index="0"]
+[node name="bomb" type="RigidBody2D" groups=[
+"bomba",
+]]
 
 input_pickable = false
 collision_layer = 1
@@ -38,9 +40,5 @@ shape = SubResource( 1 )
 [node name="Sprite" type="Sprite" parent="." index="1"]
 
 texture = ExtResource( 2 )
-
-[connection signal="body_entered" from="." to="." method="_on_bomb_body_entered"]
-
-[connection signal="body_shape_entered" from="." to="." method="_on_bomb_body_shape_entered"]
 
 

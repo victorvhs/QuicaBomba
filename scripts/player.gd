@@ -15,4 +15,9 @@ func get_input():
 	velocity = velocity.normalized() * vel
 func _physics_process(delta):
 	get_input()
-	move_and_slide(velocity)
+	var col = move_and_collide(velocity*delta)
+	if col:
+		if col.collider.has_method("hit"):
+			col.collider.hit(col.collider)
+	
+	
