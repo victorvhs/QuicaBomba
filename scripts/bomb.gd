@@ -16,12 +16,10 @@ func _process(delta):
 
 func _on_bomb_body_entered(body):
 	touch +=1
-	print("entrou")
 	if body.is_in_group('player'):
-		print("Tocou")
 		if touch == 3:
 			queue_free()
 	else:
-		print("chão")
+		queue_free()
 		
 	pass # replace with function body
