@@ -8,7 +8,7 @@
 custom_solver_bias = 0.0
 radius = 22.5238
 
-[node name="bomb" type="RigidBody2D" groups=[
+[node name="bomb" type="RigidBody2D" index="0" groups=[
 "bomba",
 ]]
 
@@ -37,8 +37,9 @@ script = ExtResource( 1 )
 position = Vector2( -0.0170517, 5.85007 )
 shape = SubResource( 1 )
 
-[node name="Sprite" type="Sprite" parent="." index="1"]
+[node name="bomb" type="Sprite" parent="." index="1"]
 
 texture = ExtResource( 2 )
+_sections_unfolded = [ "Animation", "Material", "Offset", "Visibility" ]
 
 
