@@ -18,7 +18,7 @@ extents = Vector2( 10, 83.6522 )
 custom_solver_bias = 0.0
 extents = Vector2( 374.254, 10 )
 
-[node name="main" type="Node" index="0"]
+[node name="main" type="Node"]
 
 script = ExtResource( 1 )
 
@@ -66,9 +66,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 261.0
+margin_left = 262.0
 margin_top = 3.0
-margin_right = 319.0
+margin_right = 320.0
 margin_bottom = 17.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
