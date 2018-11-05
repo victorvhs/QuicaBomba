@@ -1,10 +1,8 @@
 extends RigidBody2D
 var touch = 0
 var point = 0
-var xOff = 0
 var yOff = 0.3
-var x = 0
-var y = 90
+var y
 func _ready():
 	set_contact_monitor(true)
 	set_max_contacts_reported(3)
@@ -20,7 +18,7 @@ func hit(body):
 			blink(1, 0.65, 0, 1)
 		3:
 			blink(1, 0, 0,1)
-			apply_impulse(Vector2(xOff,yOff),Vector2(x,y))
+			apply_impulse(Vector2(0,yOff),Vector2(0,y))
 			print(y)
 		4:
 			point +=1
